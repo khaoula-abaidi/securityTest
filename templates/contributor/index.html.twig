@@ -1,0 +1,9 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+    <div class="container text-center">
+        {% for contributor in contributors %}
+            <div class="mt-5 text-primary">{{ contributor.login }}</div>
+        {% endfor %}
+    </div>
+
+{% endblock %}
